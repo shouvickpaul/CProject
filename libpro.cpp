@@ -2,7 +2,7 @@
 ***INTRODUCTION***
 
 NAME:- SHOUVICK PAUL
-SCHOOL:-BSIT
+COLLEGE:-NARASINHA DUTT COLLEGE
 
 #########################
 ## MILAN MANDIR LIBRAY ##
@@ -75,7 +75,7 @@ class issue
 	void book_issue();        // function to issue a book to a member
 	{
 		clrscr();
-		cout<<"\n\nBOOK ISSUE …";
+		cout<<"\n\nBOOK ISSUE â€¦";
 		cout<<"\n\n\tEnter The member id";
 		cin>>mn;
 		fp.open("mem.dat",ios::in|ios::out);
@@ -114,7 +114,7 @@ class issue
 			}
 		}
 		if(found==0)
-		cout<<"member record not exist…";
+		cout<<"member record not existâ€¦";
 		getch();
 		fp.close();
 		fp1.close();
@@ -123,12 +123,12 @@ class issue
 
 void Book::create_book()
 {
-		cout<<"\nNEW BOOK ENTRY…\n";
+		cout<<"\nNEW BOOK ENTRYâ€¦\n";
 		cout<<"\nEnter the Book id.";
 		cin>>bid;
 		cout<<"\n\nEnter the Name of the Book ";
 		gets(bnm);
-		cout<<"\n\nEnter the Author’s Name ";
+		cout<<"\n\nEnter the Authorâ€™s Name ";
 		gets(anm);
 		cout<<"\n\nEnter the Quantity of the Book";
 		cin>>qty;
@@ -148,7 +148,7 @@ void Book::modify_book()
 	cout<<"\nBook no. : "<<bid;
 	cout<<"\nModify Book Name : ";
 	gets(bnm);
-	cout<<"\nModify Author’s Name of Book : ";
+	cout<<"\nModify Authorâ€™s Name of Book : ";
 	gets(anm);
 	cout<<"\nModify Quantity of Book : ";
 	cin>>qty;
@@ -168,7 +168,7 @@ void Book::report()
 void Member::create_member()
 {
 	clrscr();
-	cout<<"\nNEW Member ENTRY…\n";
+	cout<<"\nNEW Member ENTRYâ€¦\n";
 	cout<<"\nEnter the Member Id ";
 	cin>>mid;
 	cout<<"\n\nEnter the Name of the Member ";
@@ -289,7 +289,7 @@ void modify_book()
 char n[6];
 int found=0;
 clrscr();
-cout<<"\n\n\tMODIFY BOOK REOCORD…. ";
+cout<<"\n\n\tMODIFY BOOK REOCORDâ€¦. ";
 cout<<"\n\n\tEnter The book no. of The book";
 cin>>n;
 fp.open("bk.dat",ios::in|ios::out);
@@ -318,7 +318,7 @@ void modify_member()
 char n[6];
 int found=0;
 clrscr();
-cout<<"\n\n\tMODIFY MEMBER RECORD… ";
+cout<<"\n\n\tMODIFY MEMBER RECORDâ€¦ ";
 cout<<"\n\n\tEnter The member id. of The member";
 cin>>n;
 fp.open("mem.dat",ios::in|ios::out);
@@ -348,7 +348,7 @@ void delete_book()
 {
 char n[6];
 clrscr();
-cout<<"\n\n\n\tDELETE BOOK …";
+cout<<"\n\n\n\tDELETE BOOK â€¦";
 cout<<"\n\nEnter The Book no. of the Book You Want To Delete : ";
 cin>>n;
 fp.open("bk.dat",ios::in|ios::out);
@@ -375,7 +375,7 @@ void delete_member()
 char n[6];
 int flag=0;
 clrscr();
-cout<<"\n\n\n\tDELETE MEMBER…";
+cout<<"\n\n\n\tDELETE MEMBERâ€¦";
 cout<<"\n\nEnter The member id. of the Member You Want To Delete : ";
 cin>>n;
 fp.open("mem.dat",ios::in|ios::out);
